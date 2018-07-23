@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body ng-app="myApp" ng-controller="MyCtrl">
+    <!-- <div>
+        <div class="tooltip">Hover over me
+            <span ng-show='showTooltip' class="tooltiptext"><input ng-model='stopThis' type="checkbox" ng-change='someFunction(stopThis)'>I Don't want to see this.</input></span>
+        </div>
+    </div>
+ -->
+    <div>
+        <table>
+            <tr>
+                <th class="tooltip"><span ng-show='showTooltip' class="tooltiptext"><input ng-model='stopThis' type="checkbox" ng-change='someFunction(stopThis)'>I Don't want to see this.</input></span>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <input type="checkbox" ng-model='showTooltip' ng-change='enableStopThis(showTooltip)'>Enable tooltip</input>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="main.js"></script>
+
+</html>
