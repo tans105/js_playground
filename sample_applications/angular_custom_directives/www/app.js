@@ -1,10 +1,9 @@
 var appModule = angular.module('myApp', []);
 
-appModule.controller("MyCtrl", function() {
+appModule.controller("MyCtrl", function($scope) {
     console.log("Controller called");
-    var self = this;
-
-    self.item = [
+  
+    $scope.items = [
         { name: 'Computer', price: 500, condition: 'New', brand: 'Lenovo', published: '01/11/2015' },
         { name: 'Phone', price: 200, condition: 'New', brand: 'Samsung', published: '02/11/2015' },
         { name: 'Printer', price: 300, condition: 'New', brand: 'Brother', published: '06/11/2015' },
