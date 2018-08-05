@@ -3,7 +3,9 @@ appModule.directive('itemWidget', [function() {
         templateUrl: 'components/item-widget/item-widget.html',
         restrict: 'EA',
         scope: {
-            item: '='
+            item: '=',
+            promo: '@',
+            pickMe: '&onSelect'
         }
     }
 }]);
