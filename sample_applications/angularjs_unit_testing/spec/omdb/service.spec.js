@@ -3,8 +3,8 @@ describe('omdb service', function() {
     var movieDataById = "Tanmay";
     var omdbApi = {};
 
-    beforeEach(angular.mock.module('omdb'));
-    beforeEach(angular.mock.inject(function(_omdbApi_) {
+    beforeEach(module('omdb'));
+    beforeEach(inject(function(_omdbApi_) {
         omdbApi = _omdbApi_;
     }));
 
