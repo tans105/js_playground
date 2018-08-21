@@ -1,5 +1,8 @@
 sample_applications/angular_custom_directives/node_modules/
 Sample\ Applications/tooltip-using-angular-directives/node_modules/
 *DS_Store*
+*node_modules*
 .DS_Store
-
+*sample_applications/angularjs_unit_testing/node_modules/
+sample_applications/angularjs_unit_testing/lib
+sample_applications/angularjs_unit_testing/bower_components/
