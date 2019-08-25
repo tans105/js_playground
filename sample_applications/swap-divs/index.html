@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function swapDivs() {
+			var temp = document.getElementById('left-div').innerHTML;
+			var right = document.getElementById('right-div').innerHTML; 	
+			var leftClass = document.getElementById('left-div').className;
+			var rightClass = document.getElementById('right-div').className;
+			
+			document.getElementById('left-div').className = rightClass;
+			document.getElementById('left-div').innerHTML = right;
+			
+			document.getElementById('right-div').className = leftClass;
+			document.getElementById('right-div').innerHTML = temp;
+			
+
+		}
+	</script>
+</head>
+<body>
+	<div class="one" id="left-div" style="float: left;"> <span>I am the one</span></div>
+	<div class="two" id="right-div" style="float: right;"> <span>I am the two</span></div>		
+	<button onclick="swapDivs()">Swap!</button>
+</body>
+</html>	
